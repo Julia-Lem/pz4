@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="pictures\favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles\styles.css">
+    <title>Главная</title>
+</head>
+
+<body>
+    <div>
+        <h1>Форма регистрации</h1>
+        <audio
+            src="DISNEY SING-ALONGS _ Bibbidi-Bobbidi-Boo - Cinderella Lyric Video _ Official Disney UK (256  kbps).mp3"
+            controls></audio>
+    </div>
+
+    <div class="images">
+    </div>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Личная информация</legend>
+            <label for="username">Имя</label>
+            <input type="text" name="username" id="username" placeholder="Введите ваше имя" required tabindex="1">
+            <br>
+            <label for="usermail">Введите Вашу почту</label>
+            <input type="email" name="usermail" id="usermail" placeholder="example@mail.ru" tabindex="2">
+            <br>
+            <label for="password">Введите Ваш пароль</label>
+            <input type="password" name="password" id="password" tabindex="3">
+            <br>
+            <label for="age">Дата рождения</label>
+            <input type="date" name="age" id="age" tabindex="4">
+            <br>
+            <label for="avatar">Аватарка</label>
+            <input type="file" name="avif" id="avatar" tabindex="5">
+            <br>
+            <p>Ваш пол:</p>
+            <label for="male">Мужской</label>
+            <input type="radio" name="male" id="male">
+            <label for="female">Женский</label>
+            <input type="radio" name="female" id="female">
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Ваши навыки</legend>
+            <p>Ваши увлечения:</p>
+            <label for="int">IT</label>
+            <input type="checkbox" name="int" id="int">
+            <br>
+            <label for="int">Спорт</label>
+            <input type="checkbox" name="sport" id="sport">
+            <br>
+            <label for="draw">Рисование</label>
+            <input type="checkbox" name="draw" id="draw">
+            <br>
+            <label for="about">Напиши о себе:</label>
+            <br>
+            <textarea name="about" id="about" cols="20" rows="3"></textarea>
+            <br>
+            <label for="about">Навыки:</label>
+            <select name="skills" id="skills" multiple>
+                <option value="JS">JS</option>
+                <option value="HTML" selected>HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Python">Python</option>
+                <option value="C++">C++</option>
+            </select>
+        </fieldset>
+        <button type="submit">Отправить</button>
+        <button type="reset">Очистить</button>
+    </form>
+</body>
+
+</html>
